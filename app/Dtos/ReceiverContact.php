@@ -15,12 +15,6 @@ final class ReceiverContact
     private string $email;
     private int $houseNumber;
 
-
-    public function getCompanyName(): string
-    {
-        return $this->companyName;
-    }
-
     public function setCompanyName(string $companyName): void
     {
         $this->companyName = $companyName;
@@ -36,19 +30,9 @@ final class ReceiverContact
         $this->name = $name;
     }
 
-    public function getStreet(): string
-    {
-        return $this->street;
-    }
-
     public function setStreet(string $street): void
     {
         $this->street = $street;
-    }
-
-    public function getPostalCode(): string
-    {
-        return $this->postalCode;
     }
 
     public function setPostalCode(string $postalCode): void
@@ -56,29 +40,14 @@ final class ReceiverContact
         $this->postalCode = $postalCode;
     }
 
-    public function getLocality(): string
-    {
-        return $this->locality;
-    }
-
     public function setLocality(string $locality): void
     {
         $this->locality = $locality;
     }
 
-    public function getCountry(): string
-    {
-        return $this->country;
-    }
-
     public function setCountry(string $country): void
     {
         $this->country = $country;
-    }
-
-    public function getEmail(): string
-    {
-        return $this->email;
     }
 
     public function setEmail(string $email): void

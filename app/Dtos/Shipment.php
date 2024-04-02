@@ -13,7 +13,6 @@ final class Shipment
 
     private ReceiverContact $receiverContact;
 
-
     public function setProductId(int $productId): void
     {
         $this->productId = $productId;

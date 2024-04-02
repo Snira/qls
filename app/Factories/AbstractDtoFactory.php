@@ -18,7 +18,6 @@ abstract class AbstractDtoFactory
         }
     }
 
-
     protected function getDto(): object
     {
         return $this->instantiate();

@@ -28,5 +28,4 @@ final class ReceiverContactFactory extends AbstractDtoFactory implements Receive
 
         return $receiverContact;
     }
-
 }

@@ -15,7 +15,7 @@ final class CreateShipmentRequest extends FormRequest
         return [
             'product_id' => ['bail', 'required', 'numeric', 'max:100'],
             'product_combination_id' => ['bail', 'required', 'numeric', 'max:100'],
-            'receiver_contact_data' => ['bail', 'required', 'array'],
+//            'receiver_contact_data' => ['bail', 'required', 'array'],
         ];
     }
 
@@ -41,9 +41,5 @@ final class CreateShipmentRequest extends FormRequest
             "country" => "NL",
             "email" => "test@test.nl"
         ];
-    }
-    protected function failedValidation(Validator $validator)
-    {
-        throw new ValidationException('hoi');
     }
 }
